@@ -1,8 +1,6 @@
 # 💡GENIUS – generating text using sketches!
 
-**基于草稿的文本生成模型**
-
-- **Paper: [GENIUS: Sketch-based Language Model Pre-training via Extreme and Selective Masking for Text Generation and Augmentation](https://github.com/beyondguo/genius/blob/master/GENIUS_gby_arxiv.pdf)**
+- **Paper: [GENIUS: Sketch-based Language Model Pre-training via Extreme and Selective Masking for Text Generation and Augmentation](https://arxiv.org/abs/2211.10330v1)**
 
 💡**GENIUS** is a powerful conditional text generation model using sketches as input, which can fill in the missing contexts for a given **sketch** (key information consisting of textual spans, phrases, or words, concatenated by mask tokens). GENIUS is pre-trained on a large- scale textual corpus with a novel *reconstruction from sketch* objective using an *extreme and selective masking* strategy, enabling it to generate diverse and high-quality texts given sketches.
 
@@ -32,9 +30,7 @@
 | Model | #params | Language | comment|
 |------------------------|--------------------------------|-------|---------|
 | [`genius-large`](https://huggingface.co/beyond/genius-large) | 406M   | English | The version used in **paper** (recommend) |
-| [`genius-large-k2t`](https://huggingface.co/beyond/genius-large-k2t)  | 406M    | English | keywords-to-text |
 | [`genius-base`](https://huggingface.co/beyond/genius-base)  | 139M    | English | smaller version |
-| [`genius-base-ps`](https://huggingface.co/beyond/genius-base)  | 139M    | English | pre-trained both in paragraphs and short sentences |
 | [`genius-base-chinese`](https://huggingface.co/beyond/genius-base-chinese) | 116M    | 中文 | 在一千万纯净中文段落上预训练|
 
 ![image-20221119191940969](https://cdn.jsdelivr.net/gh/beyondguo/mdnice_pictures/typora/202211191919005.png)
@@ -121,5 +117,14 @@ Out-of-distribution (OOD) evaluations:
 | **GeniusAug-f** | **76.18** |   66.89   | **77.45** | **80.36** | **75.22** |
 
 ### BibTeX entry and citation info
-TBD
+If you find our paper/code/models useful, please cite our paper:
+```
+@article{Guo2022GENIUS,
+  title={GENIUS: Sketch-based Language Model Pre-training via Extreme and Selective Masking for Text Generation and Augmentation},
+  author={Biyang Guo and Yeyun Gong and Yelong Shen and Songqiao Han and Hailiang Huang and Nan Duan and Weizhu Chen},
+  journal={ArXiv},
+  year={2022},
+  volume={abs/2211.10330}
+}
+```
 
